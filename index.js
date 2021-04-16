@@ -11,9 +11,10 @@ request.get("http://jsonplaceholder.typicode.com/posts", (error, res, body) => {
 });
 
 // writing the content of JSON PLACEHOLDER POSTS to post.json 
-const content = request.get("http://jsonplaceholder.typicode.com/posts", (error, res, body));
+// const content ="I am a female Programmer. I write the backend logic of systems";
+const content = request.get("http://jsonplaceholder.typicode.com/posts", ( res, body));
    
-    fs.writeFile("post.json", content, err =>{
+    fs.writeFile("./result/post.json", content, err =>{
         if(err){
             console.log(err)
         }
